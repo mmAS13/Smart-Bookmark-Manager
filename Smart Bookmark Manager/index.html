@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Bookmark Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+       
+</head>
+<body>
+    <!-- HTML content remains exactly the same -->
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-bookmark"></i> Smart Bookmark Manager</h1>
+            <p>Organize your favorite websites with style and efficiency</p>
+        </div>
+
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-number" id="totalBookmarks">0</span>
+                <span class="stat-label">Total Bookmarks</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" id="totalCategories">0</span>
+                <span class="stat-label">Unique Categories</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="add-form">
+                <div class="form-group">
+                    <input type="text" id="bookmarkName" placeholder="Website Name (e.g. Google)" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <input type="url" id="bookmarkUrl" placeholder="https://example.com">
+                </div>
+                <div class="form-group">
+                    <select id="bookmarkCategory">
+                        <option value="Work">💼 Work</option>
+                        <option value="Learning">📚 Learning</option>
+                        <option value="Social">👥 Social</option>
+                        <option value="Entertainment">🎬 Entertainment</option>
+                        <option value="Personal">❤️ Personal</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary" id="addBookmark">
+                    <i class="fas fa-plus"></i> Add Bookmark
+                </button>
+            </div>
+
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" id="searchInput" placeholder="🔍 Search bookmarks by name or URL...">
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-th"></i> All
+                </button>
+                <button class="filter-btn" data-filter="Work">
+                    <i class="fas fa-briefcase"></i> Work
+                </button>
+                <button class="filter-btn" data-filter="Learning">
+                    <i class="fas fa-book"></i> Learning
+                </button>
+                <button class="filter-btn" data-filter="Social">
+                    <i class="fas fa-users"></i> Social
+                </button>
+                <button class="filter-btn" data-filter="Entertainment">
+                    <i class="fas fa-film"></i> Entertainment
+                </button>
+                <button class="filter-btn" data-filter="Personal">
+                    <i class="fas fa-heart"></i> Personal
+                </button>
+            </div>
+        </div>
+
+        <div class="bookmarks-grid" id="bookmarksGrid">
+            <!-- Bookmarks will be rendered here -->
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal" id="deleteModal">
+        <div class="modal-content">
+            <i class="fas fa-exclamation-triangle" style="font-size: 3rem; color: var(--warning); margin-bottom: 20px;"></i>
+            <h3>Delete Bookmark?</h3>
+            <p>Are you sure you want to delete "<span id="deleteBookmarkName"></span>"? This action cannot be undone.</p>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" id="cancelDelete">Cancel</button>
+                <button class="btn btn-primary" id="confirmDelete">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Modal -->
+    <div class="modal" id="editModal">
+        <div class="modal-content" style="text-align: left;">
+            <h3 style="text-align: center;"><i class="fas fa-edit"></i> Edit Bookmark</h3>
+            <div class="form-group">
+                <input type="text" id="editName" placeholder="Website Name">
+            </div>
+            <div class="form-group">
+                <input type="url" id="editUrl" placeholder="https://example.com">
+            </div>
+            <div class="form-group">
+                <select id="editCategory">
+                    <option value="Work">💼 Work</option>
+                    <option value="Learning">📚 Learning</option>
+                    <option value="Social">👥 Social</option>
+                    <option value="Entertainment">🎬 Entertainment</option>
+                    <option value="Personal">❤️ Personal</option>
+                                </select>
+            </div>
+            <div class="modal-buttons">
+                <button class="btn btn-secondary" id="cancelEdit">Cancel</button>
+                <button class="btn btn-primary" id="saveEdit">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Custom JS -->
+     <script src="script.js"></script>
+        
+    </script>
+</body>
+</html>
