@@ -1,4 +1,4 @@
-🔖 Smart Bookmark Manager
+# Smart Bookmark Manager
 
 A modern and responsive Smart Bookmark Manager built using HTML, CSS, and Vanilla JavaScript that allows users to save, organize, and manage their favorite website links easily.
 
@@ -53,7 +53,7 @@ CSS3
 JavaScript (Vanilla JS)
 Local Storage API
 
-🧠 Skills Demonstrated
+# Skills Demonstrated
 
 This project showcases important frontend development skills, including:
 
@@ -64,7 +64,7 @@ CRUD operations
 Responsive UI design
 Component-based layout
 
-📂 Project Structure
+#  Project Structure
 Smart-Bookmark-Manager
 │
 ├── index.html
@@ -74,11 +74,11 @@ Smart-Bookmark-Manager
 
 
 
-🎯 Learning Purpose
+# Learning Purpose
 
 This project was created to practice and strengthen core frontend development skills by building a real-world productivity tool using pure JavaScript without frameworks.
 
-🚀 Future Improvements
+# Future Improvements
 
 Possible enhancements for the project:
 Edit bookmark feature
@@ -87,7 +87,7 @@ Dark mode
 Drag & drop bookmark sorting
 Import / export bookmarks
 
-🤖 AI Assistance
+# AI Assistance
 
 This project was created as part of my frontend learning journey.
 As a beginner developer, I used AI tools such as ChatGPT and Blackbox AI for guidance, idea generation, and debugging support.
@@ -96,7 +96,7 @@ The purpose of using AI was to understand concepts, improve problem-solving skil
 
 All code was reviewed, tested, and modified during the learning process, making this project a valuable hands-on experience in HTML, CSS, and JavaScript.
 
-👩‍💻 Author
+# Author
 
 Created by Marium Memon
 Frontend Development Learner
