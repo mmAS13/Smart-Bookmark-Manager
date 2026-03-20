@@ -96,6 +96,9 @@ The purpose of using AI was to understand concepts, improve problem-solving skil
 
 All code was reviewed, tested, and modified during the learning process, making this project a valuable hands-on experience in HTML, CSS, and JavaScript.
 
+# View Live
+https://smartbbokmarkproject.netlify.app/
+
 # Author
 
 Created by Marium Memon
